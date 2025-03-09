@@ -8,6 +8,13 @@
     --color-white: hwb(236 38% 2%);
 }
 
+
+@media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
+  }
+}
+
 /* Estilos generales */
 * {
     margin: 0;

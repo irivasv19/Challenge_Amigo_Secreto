@@ -1,3 +1,8 @@
+@media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
+  }
+}
 :root {
     --color-primary: rgb(191, 166, 255);
     --color-secondary: hwb(205 75% 1%);
@@ -9,11 +14,7 @@
 }
 
 
-@media screen and (min-width: 80rem) {
-  .container {
-    margin: 1em 2em;
-  }
-}
+
 
 /* Estilos generales */
 * {

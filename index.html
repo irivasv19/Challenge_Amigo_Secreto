@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-   
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,25 +14,25 @@
 </head>
 
 <body>
-    <main class="main-content">
-        <header class="header-banner">
-            <h1 class="main-title" style="font-size:10vw">Amigo Secreto</h1>
-            <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto" style="max-width:100%;height:auto;">
+    <main class="main-content container">
+        <header class="header-banner text-center">
+            <h1 class="main-title display-1">Amigo Secreto</h1>
+            <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto" class="img-fluid">
         </header>
-        
-        <section class="input-section">
-            <h2 class="section-title">Digite el nombre de sus amigos</h2>
-            <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
-            </div>
-           
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
-            <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícono para sortear"style="max-width:100%;height:auto;">
+        <section class="input-section mt-5">
+            <h2 class="section-title text-center mb-4">Digite el nombre de sus amigos</h2>
+            <div class="input-wrapper d-flex justify-content-center">
+                <input type="text" id="amigo" class="form-control w-50" placeholder="Escribe un nombre">
+                <button class="btn btn-primary ms-2" onclick="agregarAmigo()">Añadir</button>
+            </div>
+
+            <ul id="listaAmigos" class="list-group mt-3" aria-labelledby="listaAmigos" role="list"></ul>
+            <ul id="resultado" class="list-group mt-3" aria-live="polite"></ul>
+
+            <div class="button-container text-center mt-4">
+                <button class="btn btn-success btn-lg" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                    <img src="assets/play_circle_outline.png" alt="Ícono para sortear" class="img-fluid">
                     Sortear amigo
                 </button>
             </div>
@@ -41,4 +41,5 @@
 
     <script src="app.js" defer></script>
 </body>
+
 </html>
